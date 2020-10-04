@@ -1,7 +1,9 @@
 # Programming Environment Setup
 
 All software utilized by the programming team is listed below, with software not distributed by robotics-related companies below. If you are a Team 1280 programmer and the current year is not listed, please yell at the Programming Lead or whomever they have delegated the task to, or failing that, message @aerottd on GitHub.
+
 Do note that as the season progresses, patches will be released for some FRC software, namely the RoboRIO image and the WPILib  VS Code installation. For **only** the WPILib VS Code installation, it may be better to avoid updating, as uninstalling WPILib VS Code may mess with robot code on your PC (note: if you're using Git properly, this isn't an issue).
+
 >This guide is accurate as of: `27 September 2020`
 
 ## Glossary
@@ -41,6 +43,7 @@ Joke aside, Git is essential for properly coordinating a team of programmers (re
  - What does Git actually do?
  
 Git is a version control system that allows users to push their files to a remote server. In addition to Git, our team uses GitHub (note that these are two entirely separate entities), a website that acts as a host for remote Git servers. This means that we have access to our own free remote fileserver, running its own copy of Git. In fact, you're currently reading this Markdown file on GitHub (unless it's been moved)!
+
 The following is an example of one use case for Git:
 
  1. C-Biscuit creates a robot project in VS Code. C-Biscuit finishes programming, and opens the file directory containing his program. They right-click in this directory, and click `Git Bash here`, which opens up a Git command-line, initialized to that directory.
@@ -50,6 +53,7 @@ The following is an example of one use case for Git:
  3. OctoCat executes `$git clone` followed by the Git URL and begins coding on C-Biscuit's codebase.
 
 There are obviously many more uses and commands for Git; this is simply serves as a basic example.
+
 **Roger Dudler's [Git guide](https://rogerdudler.github.io/git-guide/) is very helpful**, though it does contain some non-PG language.
 
 ### Installation
@@ -165,9 +169,10 @@ You may find a list of all Java Toolchain software [here](https://docs.wpilib.or
 
 Necessary install locations linked [here](https://docs.wpilib.org/en/stable/docs/getting-started/getting-started-frc-control-system/offline-installation-preparations.html):
 
- - [FRC Radio Configuration Utility](https://firstfrc.blob.core.windows.net/frc2020/Radio/FRC_Radio_Configuration_20_0_0.zip) (direct download link)
+- [FRC Radio Configuration Utility](https://firstfrc.blob.core.windows.net/frc2020/Radio/FRC_Radio_Configuration_20_0_0.zip) (direct download link)
 - [FRC Game Tools](https://www.ni.com/en-us/support/downloads/drivers/download.frc-game-tools.html#333285) 
 - [WPILib Installer](https://github.com/wpilibsuite/allwpilib/releases/download/v2020.3.2/WPILibInstaller_Windows64-2020.3.2.zip) (direct download link)
+
 >Note that the WPILib installer is slightly larger than 1 GB and will take a while to install. As of 9/18/2020, the most recent WPILib installer version is `2020.3.2`, which can also be found by scrolling down to Assets on the [release post](https://github.com/wpilibsuite/allwpilib/releases).
 
 Once you've downloaded all three packages linked above, do the following:
@@ -223,4 +228,6 @@ Npcap is a service, or more specifically, an API, that allows the Radio Configur
 
  19. You should be able to now press 'Next', followed by 'Finish' to exit out of the Npcap installer, and then 'Finish' again to exit out of the FRC Radio Configuration Utility installer.
 
-Congratulations! If you've followed all of the above directions, and you've installed the items under the 'Non-FRC Software' headers, then you are now in possession of a fully-functioning programming computer and/or drive computer. Thanks for reading!
+Congratulations! If you've followed all of the above directions, and you've installed the items under the 'Non-FRC Software' headers, then you are now in possession of a fully-functioning programming computer and/or drive computer. 
+
+Thanks for reading!
