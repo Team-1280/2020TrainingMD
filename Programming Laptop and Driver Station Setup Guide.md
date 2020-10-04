@@ -9,16 +9,27 @@ Do note that as the season progresses, patches will be released for some FRC sof
 Some of the terms used in this guide may be confusing, so the following is a list of definitions in case you find a word you can't understand. As the guide is updated, please add new confusing terms and their definitions below.
 
 **C-Biscuit** - Our team mascot, named after Seabiscuit, the famous racehorse.
+
 **Markdown / Markdown file** - A fancy text file that allows formatting (e.g. bold text, italics, headers, lists, links, images). You are currently reading a markdown file.
+
 **GNU GPL** - The "General Public License" used by GNU, the organization that distributes Linux, a massive open-source operating system that is widely used in technical applications.
+
 **EULA** - End user license agreement. In essence, a wall of text that you are legally required to "read" and agree to. 
+
 **Image / Imaging** - In computing, 'imaging' a disk or drive refers to putting either a 'template' or a full program onto it, and especially when that drive is to be used in a microcomputer or some other form of embedded system.
+
 **Microcomputer** - A small device that has computing power but isn't generally large enough to be considered a computer on its own right. Depending on who you ask, a Raspberry Pi, an Arduino, and the RoboRIO (our robot's "brain") are all microcomputers.
+
 **Embedded System** - Any form of system that is 'embedded' in hardware and is not intended to be changed by the person using the hardware. Motor controllers, parts of the PDP and VRMs, and various other small electronic parts we use have embedded systems.
+
 **PDP / VRM** - PDP stands for Power Distribution Panel. Sends power to robot components. VRM stands for Voltage Regulator Module. Prevents the output power from the PDP from frying sensitive lower-power electronics.
+
 **[.zip] Archive** - A "Zipped" file that is compressed, meaning its size has been reduced from the original. Virtually the only way to download a folder of items from the Internet is to put that folder into a "dot zip archive", or ".zip archive", or simply an "archive". The terms are mostly interchangeable. You'll probably get one of these every time you click a download link below.
+
 **Toolchain** -  A collection of software items that make up a programmer's metaphorical "toolbelt" that are required to make a final product--in our case, a robot. FRC's own toolchain is part of our team's specific toolchain, which includes the items listed as "Non-FRC Software".
+
 **API** - Application Programming Interface; a way for software to "talk" with other software or hardware, or simply a way to make that "talking" easier.
+
 **NI** - The company formerly known as National Instruments, who produces a large amount of software, hardware, etc. for FRC teams such as ours (e.g. LabView and its various components).
 
 ## Non-FRC Software (Version Control)
