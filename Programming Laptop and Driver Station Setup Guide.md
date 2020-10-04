@@ -45,13 +45,19 @@ There are obviously many more uses and commands for Git; this is simply serves a
  3. Once the installer has been downloaded, run it. If it asks for administrator access, grant it.
  4. Agree to the license (it's GNU GPL, which is one of the most commonly-used free software licenses).
  5. You should see an install screen that looks like this:
+ 
 ![The Git SCM component selection screen.](https://i.imgur.com/6ifAXbW.png)
+
 You will likely find all of these boxes checked. Desktop icons are a personal choice; **make sure you have Git Bash Here enabled!** It's also recommended to select 'Check daily for Git for Windows updates' as well, but it's a personal choice.
 6. Press next and select a directory, then press next again. You will arrive on this screen:
+
 ![Default Git editor select screen.](https://i.imgur.com/vvMA1Eg.png)
+
 This option really falls down to personal choice. So long as BASH is installed as the Git Bash option, which it should be if you've followed the tutorial, you can choose almost anything. If you've installed VS Code or selected an existing install using the most recent-year tutorial, using that is recommended, but *it doesn't really matter since you will almost certainly be using VS Code to write and Git Bash to upload*. Vi and Vim are both outdated and a pain to use, but they're also very powerful. Press 'Next' when done.
 7. Yet another important screen:
+
 ![The PATH environment screen.](https://i.imgur.com/qFOOuCT.png)
+
 This one can be dangerous if you mess with it. If you're super cautious (e.g. your parents are reading this over your shoulder and red text scares them), you can go with the first option, since our team really only uses Bash, but in a hurry using `cmd` instead can be quicker. Sticking with the Recommended option, already selected above, is, well, recommended. Hit 'Next' when you've made up your mind, and **do not** take the third option.
 8. You will reach a less important screen, this time for OpenSSL versus Windows Secure Channel. Whichever option is highlighted is best; if none are highlighted, select OpenSSL. Press 'Next'.
 9. You will reach a screen concerning line endings. Click the first option ('Checkout Windows style . . . ') if not already selected, and hit 'Next'.
@@ -89,13 +95,18 @@ All Balena and Limelight software is now installed. You shouldn't ever actually 
 CTRE, or Cross The Road Electronics, is a company that manufactures some very important items (Motor controllers, PDP, VRMs) for operating a robot. These items need to talk to the robot and the driver station, and they need to be imaged. The software and image files to do so can be found on their [technical resources page](http://www.ctr-electronics.com/hro.html#product_tabs_technical_resources).
 You will be installing the following software items:
 
- - [Describe these later](https://github.com/CrossTheRoadElec/Phoenix-Releases/releases/download/v5.18.4.3/CTRE.Phoenix.Framework.v5.18.4.3.zip) (direct download)
+ - [CTRE LifeBoat, Phoenix Tuner, and all drivers](https://github.com/CrossTheRoadElec/Phoenix-Releases/releases/download/v5.18.4.3/CTRE.Phoenix.Framework.v5.18.4.3.zip) (direct download)
  1. Once the `.zip` archive has finished downloading, right-click on it and press 'Extract all' to your Downloads folder, and open the resultant unzipped folder if it doesn't automatically open. Run the executable titled 'CTRE Phoenix Framework v5.18.4.3' (numbers may differ). 
  2. Windows "Smart" Screen may detect it as potentially harmful; if so, press 'More info' and then 'Run anyway' at the bottom. The installer may ask for admin permissions; press 'Allow Access' if prompted. 
- 3. You will see a welcome screen. Press 'Next', and you will continue to the installation selection screen. LifeBoat and Phoenix Tuner are 'mandatory installs', and are auto-checked; **make sure to check C++/Java under RoboRIO-FRC** if it hasn't already been checked. Press 'Next'. ![The CTRE Framework Setup Installation Selection screen.](https://i.imgur.com/OKqPr1t.png)
+ 3. You will see a welcome screen. Press 'Next', and you will continue to the installation selection screen. LifeBoat and Phoenix Tuner are 'mandatory installs', and are auto-checked; **make sure to check C++/Java under RoboRIO-FRC** if it hasn't already been checked. Press 'Next'. 
+ 
+ ![The CTRE Framework Setup Installation Selection screen.](https://i.imgur.com/OKqPr1t.png)
+ 
  4. Read the EULA (this one is only like a paragraph long, thank God), press 'I Agree', and then "thoroughly" read the Hero SDK agreement and hit 'I Agree'.
  5. The installer will begin automatically unpacking and installing everything. When finished, Windows Security will prompt you to install CTRE drivers; press Install, and check 'Always trust software from "Cross The Road Electronics, LLC". 
+ 
 ![The Windows Security driver installation popup.](https://i.imgur.com/OKApipu.png)
+
  7. You will be taken to the installation finish screen. Leave release notes checked or unchecked depending on whether or not you care, and press 'Finish'.
 
 Congrats! You now have copies of all CTRE software. You can now image/update/(hopefully not) debug CTRE devices. Phoenix Tuner is the software item; the `.crf` files in the folder (it's most likely a shortcut) are the images for all of the devices you'll be using. You'll need a direct USB hookup to the RoboRIO to image anything.
@@ -128,7 +139,9 @@ Once you've downloaded all three packages linked above, do the following:
  2. Once the WPILib Installer is unzipped, open the regular folder of the same name now in your downloads folder and run the single executable inside (yes, that one file is over a gigabyte in size).
  3. You will be prompted with a window asking you if you want to install for all users, or just the current user. Select `All Users` and grant the installer administrator access.
  4. At this point, you will reach a screen that looks like this: 
+ 
 ![The WPILib installer main dialogue. If this image has broken, you are looking at a window with seven checkboxes, and a prompt at the bottom reading 'Execute Install'.](https://i.imgur.com/e3QPFKf.png)
+
  This tutorial will assume you do NOT have an existing VS Code install. Press 'Select/Download VS Code' and then 'Download'. The previously grayed-out boxes shown in the last image should now be checked. Press 'Execute Install' and wait for the installation to finish. 
  5. There should now be a pop-up reading `Finished! Use Desktop Icon to Open VS Code`. Press OK.
  6.  The NI Package Manager should have finished downloading. Run it, and you will be greeted with an End User License Agreement. Accept it after "thoroughly" reading it.
@@ -137,7 +150,9 @@ Once you've downloaded all three packages linked above, do the following:
  9. The Package Manager may prompt you to install the NI Certificates Installer; if prompted, check the box (or leave it checked) and hit 'Next'.
  10. The Package Manager installer will (read: should) automatically segway into the Package Manager itself, and you will be prompted to "read" and accept the EULA(s) for the FRC Game Tools.  "Read" and accept them, and proceed onwards.
  11. You should now have reached a screen that looks like this:
+ 
 ![FRC Game Tools](https://i.imgur.com/u0ypavL.png)
+
 Ensure that FRC Game Tools, the NI License Manager, and (if you checked it on Step 9) the NI Certificates Installer are all present, at the very least, and then proceed by pressing 'Next'.
 12. The items listed in the last screen should now be installing. Wait for completion.
 13.  Another window will pop up before the install completes called 'NI Licensing Wizard'. To continue, create or log in with a National Instruments account. 
@@ -147,7 +162,9 @@ Note: If you don't have the serial number, you can finish the installation *with
 16. The Radio Configuration Utility should have finished downloading; it will most likely be in a `.zip` archive titled `FRC_Radio_Configuration_Utility_20_0_0`. Extract the files and run the installer executable. Windows 10 might detect it as an "unrecognized app" and prevent it from running; if this happens, press 'More Info' and hit 'Run Anyway'.
 17. Press 'Next' through all context menus: you can decide the path and whether or not you want a desktop icon, but these are all personal preference options. Hit 'Install'.
 18. You will most likely be prompted with a message that reads:
+
 ![The Npcap installer prompt.](https://i.imgur.com/aAEcdiT.png)
+
 Npcap is a service, or more specifically, an API, that allows the Radio Configuration Utility to capture packets. In other words, without Npcap, the Radio Configuration Utility cannot 'talk' to the radio. Press 'OK', followed by 'I Agree' to the EULA, and then 'Install'. *Do not check or uncheck any boxes on the 'Install' page*.
 19. You should be able to now press 'Next', followed by 'Finish' to exit out of the Npcap installer, and then 'Finish' again to exit out of the FRC Radio Configuration Utility installer.
 
